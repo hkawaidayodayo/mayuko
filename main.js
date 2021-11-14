@@ -49,4 +49,6 @@ $(function(){
     //回転を再開する
     $('.restart').click(restart);
 
+
+  
 });
