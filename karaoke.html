@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="6000000000; url=random.html" />
+    <meta http-equiv="refresh" content="60; url=random.html" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -23,7 +23,8 @@
 </div>
 <div class="splashbg"></div>
   <div id="container">
-        <ul class="slider">
+        <span id="ms_timer">Ready?</span>
+                <ul class="slider">
                 
                 <!-- <li><img src="/img/001.jpg" alt=""></li>
                 <li><img src="/img/002.jpg" alt=""></li>
@@ -31,7 +32,6 @@
                 <li><img src="/img/004.jpg" alt=""></li>
                 <li><img src="/img/005.jpg" alt=""></li> -->
         </ul>  <!---画面遷移後-->
-        <span id="ms_timer">Ready?</span>
 </div>
 </body>
 <script>
@@ -39,8 +39,8 @@
 
 const images = [];//imagesにから配列を入れた
 
-for (let i = 1; i <= 9; i++) {//　i＝1　から　i=5を繰り返す (<=ここが肝)
-        images.push("/img/00"+(i)+".jpg")   //プッシュメソッドを使って配列に（）の中を入れている  
+for (let i = 1; i <= 20; i++) {//　i＝1　から　i=5を繰り返す (<=ここが肝)
+        images.push("/img/"+(i)+".jpg")   //プッシュメソッドを使って配列に（）の中を入れている  
 }       
 
 // const images = ["/img/001.jpg","/img/002.jpg","/img/003.jpg","/img/004.jpg","/img/005.jpg"];
@@ -51,7 +51,7 @@ for (let i = 1; i <= 9; i++) {//　i＝1　から　i=5を繰り返す (<=ここ
 // }
 // ※触るな危険※}
 
-for (let i = 1; i <= 9; i++) {
+for (let i = 1; i <= 5; i++) {
 let x = Math.floor(Math.random() * images.length)//iに乱数を入れる
 let get = images[x]; //getに乱数番目の要素を取り出して入れている
 $('.slider').append('<li><img src="'+get+'" alt=""></li>');//
