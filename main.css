@@ -333,18 +333,20 @@ opacity: 1;/*透過なし*/
     position: absolute;/*絶対配置にする*/
     z-index: 3;
     top: 42%;
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
     cursor: pointer;/*マウスカーソルを指マークに*/
     height: 25px;
     width: 25px;
 }
 
 .slick-prev {/*戻る矢印の位置と形状*/
-    left:2.5%;
+    left:-1.5%;
     transform: rotate(-135deg);
 }
 
 .slick-next {/*次へ矢印の位置と形状*/
-    right:2.5%;
+    right:-1.5%;
     transform: rotate(45deg);
 }
 
@@ -352,12 +354,12 @@ opacity: 1;/*透過なし*/
 
 .slick-dots {
   text-align:center;
-margin:20px 0 0 0;
+  margin:20px 0 0 0;
 }
 
 .slick-dots li {
   display:inline-block;
-margin:0 5px;
+  margin:0 5px;
 }
 
 .slick-dots button {
@@ -378,5 +380,4 @@ margin:0 5px;
 span#ms_timer {
   display: flex;
   justify-content: center;
-  padding: 40px;
 }
