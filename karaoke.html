@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60; url=random.html" />
+    <meta http-equiv="refresh" content="60; url=index.html" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -16,22 +16,25 @@
     <script src="jQuery.countdownTimer.js"></script>
     <script src="main.js"></script>
 </head>
+
+
 <body>
 <div id="splash">
-        <div id="splash-logo">勝負は3分！さぁ君の個性をぶつけろ！</div>
+        <div id="splash-logo">勝負は1分！さぁ君の個性をぶつけろ！</div>
 <!--/splash-->
 </div>
 <div class="splashbg"></div>
-  <div id="container">
-        <span id="ms_timer">Ready?</span>
-                <ul class="slider">
-                
-                <!-- <li><img src="/img/001.jpg" alt=""></li>
-                <li><img src="/img/002.jpg" alt=""></li>
-                <li><img src="/img/003.jpg" alt=""></li>
-                <li><img src="/img/004.jpg" alt=""></li>
-                <li><img src="/img/005.jpg" alt=""></li> -->
-        </ul>  <!---画面遷移後-->
+        <div id="container">
+                <section class="kawaidayo">
+                        <span id="ms_timer">Ready?</span>
+                                <ul class="slider">            
+                                <!-- <li><img src="/img/001.jpg" alt=""></li>
+                                <li><img src="/img/002.jpg" alt=""></li>
+                                <li><img src="/img/003.jpg" alt=""></li>
+                                <li><img src="/img/004.jpg" alt=""></li>
+                                <li><img src="/img/005.jpg" alt=""></li> -->
+        　　　　                 </ul>  <!---画面遷移後-->
+                   </section>
 </div>
 </body>
 <script>
@@ -39,7 +42,7 @@
 
 const images = [];//imagesにから配列を入れた
 
-for (let i = 1; i <= 20; i++) {//　i＝1　から　i=5を繰り返す (<=ここが肝)
+for (let i = 1; i <= 30; i++) {//　i＝1　から　i=5を繰り返す (<=ここが肝)
         images.push("/img/"+(i)+".jpg")   //プッシュメソッドを使って配列に（）の中を入れている  
 }       
 
